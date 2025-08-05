@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to W3Schools</title>
+    
+</head>
+<body>
+
+    <div class="modal-container">
+       
+        <div class="modal-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1200px-W3Schools_logo.svg.png" alt="W3Schools Logo">
+        </div>
+
+        
+        <div class="tab-header">
+            <button id="login-tab-btn" class="tab-btn active">Log in</button>
+            <button id="signup-tab-btn" class="tab-btn">Sign up</button>
+        </div>
+
+        
+        <div id="login-form" class="form-content">
+            <form>
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email">
+                
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password">
+
+                <button type="submit" class="btn-primary">Log in</button>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </form>
+            <p class="social-text">Or log in with:</p>
+            <div class="social-logins">
+                <button class="btn-social">Google</button>
+                <button class="btn-social">GitHub</button>
+                <button class="btn-social">Facebook</button>
+            </div>
+        </div>
+
+        <!-- Sign Up Form (Hidden by default) -->
+        <div id="signup-form" class="form-content" style="display: none;">
+            <form>
+                <label for="signup-email">Your email</label>
+                <input type="email" id="signup-email" placeholder="Email">
+
+                <label for="signup-password">Create a password</label>
+                <input type="password" id="signup-password" placeholder="At least 8 characters">
+                
+                <button type="submit" class="btn-primary">Sign up</button>
+            </form>
+            <p class="terms-text">By signing up, you agree to W3Schools' <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+
+    </div>
+
+    <!-- We will add JavaScript here to make the tabs work -->
+    <script></script>
+
+</body>
+</html>
