@@ -1,79 +1,193 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>IRCTC Booking</title>
-  </head>
-  <body>
-    <header>
-      <img src="indian-railways-logo.png" alt="Indian Railways Logo">
-      <nav>
-        <button>LOGIN</button>
-        <a href="#">REGISTER</a>
-        <a href="#">AGENT LOGIN</a>
-        <a href="#">CONTACT US</a>
-        <a href="#">HELP & SUPPORT</a>
-        <a href="#">DAILY DEALS</a>
-        <a href="#">ALERTS</a>
-        <span>30-Jul-2025 [22:18:32]</span>
-        <a href="#">A-</a>
-        <a href="#">A</a>
-        <a href="#">A+</a>
-        <a href="#">हिंदी</a>
-      </nav>
-    </header>
+<head>
+    <title>Create Your IRCTC Account</title>
+    <style>
+        /* 
+         Adds padding around the body to prevent content from
+         touching the browser edges.
+        */
+        body {
+            padding: 20px;
+        }
 
-    <main>
-      <nav>
-        <button>IRCTC EXCLUSIVE</button>
-        <a href="#">TRAINS</a>
-        <a href="#">LOYALTY</a>
-        <a href="#">IRCTC eWallet</a>
-        <a href="#">BUSES</a>
-        <a href="#">FLIGHTS</a>
-        <a href="#">HOTELS</a>
-        <a href="#">HOLIDAYS</a>
-        <a href="#">MEALS</a>
-        <a href="#">PROMOTIONS</a>
-        <a href="#">MORE</a>
-      </nav>
+        /* 
+         A container for the main content areas to group them.
+         A border helps define the page area.
+        */
+        .container {
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
 
-      <section>
-        <div>
-          <button>PNR STATUS</button>
-          <button>CHARTS / VACANCY</button>
+        /* 
+         Styles the two main sections (form and help).
+         A margin creates space between them.
+         Padding provides internal breathing room.
+         A border helps to visually separate them.
+        */
+        .main-section {
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #999;
+        }
+        
+        /* Adds space below the main heading */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Styles the list of instructions at the top */
+        .instructions-list {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #eee;
+        }
+        
+        /* Adds consistent vertical spacing between each form group */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* 
+         Styles all text inputs and select dropdowns.
+         - Padding makes the fields taller and gives text inside some space.
+         - A border is necessary to define the shape of the input fields.
+        */
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select {
+            padding: 12px;
+            border: 1px solid #aaa;
+        }
+
+        /* 
+         Styles for the blue/red message boxes seen in the form.
+         - Padding gives the text inside space.
+         - A border defines the box.
+         - Margin adds space around the box.
+        */
+        .message-box {
+            padding: 15px;
+            margin-top: 5px;
+            border: 1px solid #777;
+        }
+        
+        /* Styles the captcha display box */
+        .captcha-display {
+            padding: 15px 20px;
+            margin-bottom: 5px;
+            border: 1px solid #555;
+        }
+
+        /* 
+         Styles the main submit button.
+         - Padding makes it large and clickable.
+         - A border defines its edges.
+        */
+        .submit-button {
+            padding: 14px 30px;
+            border: 1px solid #333;
+        }
+
+        /* Styles for the red warning box in the help section */
+        .warning-box {
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 2px solid #555; /* A thicker border to make it stand out */
+        }
+        
+        /* Styles for each clickable FAQ item */
+        .faq-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #bbb;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Main Form Section (Left Column in Screenshot) -->
+        <div class="main-section">
+            <h1>Create Your IRCTC account</h1>
+            
+            <ol class="instructions-list">
+                <li>Garbage / Junk values in profile may lead to deactivation of IRCTC account.</li>
+                <li>Opening Advance Reservation Period(ARP) ticket and Opening Tatkal ticket booking for unauthenticated users is allowed only after 4 days from date of User Registration (excluding the day of registration).</li>
+            </ol>
+            <p>If you have already an account. <a href="http://127.0.0.1:3000/week3/irctclogin.html" target="_blank">Sign</a></p>
+            
+            <form>
+                <div class="form-group">
+                    <label for="username">User Name</label><br>
+                    <input type="text" id="username">
+                    <div class="message-box">User Name/Email Id is required.</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label><br>
+                    <input type="password" id="confirm-password">
+                    <div class="message-box">Invalid email ID may lead to deactivation of IRCTC account.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <select>
+                        <option>+91 - India</option>
+                    </select>
+                    <div class="message-box">Please submit Mobile Number without ISD Code</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile</label><br>
+                    <input type="text" id="mobile">
+                </div>
+
+                <div class="form-group">
+                    <div class="captcha-display">bX6eeW</div>
+                    <input type="text" placeholder="Enter Captcha">
+                </div>
+                
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
         </div>
+        
+        <!-- Help & FAQ Section (Right Column in Screenshot) -->
+        <div class="main-section">
+            <div class="warning-box">
+                <h3>BEWARE OF FRAUDSTERS</h3>
+                <p>IRCTC does not share any unsolicited links, APKs, SMS or WhatsApp messages for installing the IRCTC Rail Connect Ticketing App. Always download the official app only from Google Play Store or Apple App Store.</p>
+            </div>
+            
+            <h2>Help & FAQ</h2>
+            <p>Have Questions About Registering on the IRCTC Ticketing Website? Here, you'll find answers to some frequently asked questions (FAQs) to help guide you through the registration process.</p>
+            
+            <div class="faq-item">What is the IRCTC Ticketing Website?</div>
+            <div class="faq-item">Why do I need to register on IRCTC?</div>
+            <div class="faq-item">How can I register on IRCTC?</div>
+            <div class="faq-item">Are there any charges for registering on IRCTC?</div>
+            <div class="faq-item">What information do I need to provide for registration?</div>
+        </div>
+        
+    </div>
 
-        <h2>BOOK TICKET</h2>
-
-        <form>
-          <input type="text" placeholder="From">
-          <input type="text" placeholder="30/07/2025">
-          <input type="text" placeholder="To">
-          <select>
-            <option>All Classes</option>
-          </select>
-          <select>
-            <option>GENERAL</option>
-          </select>
-
-          <div>
-            <label><input type="checkbox"> Person With Disability Concession</label><br>
-            <label><input type="checkbox"> Flexible With Date</label><br>
-            <label><input type="checkbox"> Train with Available Berth</label><br>
-            <label><input type="checkbox"> Railway Pass Concession</label><br>
-          </div>
-
-          <button type="submit">Search</button>
-          <button type="button">Easy Booking on AskDISHA</button>
-        </form>
-      </section>
-
-      <footer>
-        <p>Customers can use enhanced interface for their IRCTC related queries!!</p>
-        <p>https://equery.irctc.co.in</p>
-        <p>Customer Care Numbers : 14646</p>
-        <p>BEWARE OF FRAUDSTERS: Always download official IRCTC Rail Connect App from the Google Play Store or Apple App Store only.</p>
-      </footer>
-    </main>
-  </body>
+</body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Your Account - W3Schools</title>
+    <style>
+        /* 
+         Applies padding around the entire page content, pushing it away 
+         from the browser edges. This is the first step in creating a layout.
+        */
+        body {
+            padding: 20px;
+        }
+
+        /* 
+         This is the main container for your form.
+         - A border is added to create a visual "box" around the content.
+         - Padding is added to create space between the border and the content inside it.
+        */
+        div {
+            border: 1px solid #cccccc; /* A simple border to define the element's edge */
+            padding: 30px;              /* Internal padding for all content */
+        }
+
+        /* 
+         - Buttons are given padding to make them larger and easier to click.
+         - Margin is used to create space between each button.
+         - A border defines the button's edges.
+        */
+        button {
+            padding: 10px 20px; /* Vertical and horizontal padding */
+            margin: 5px;        /* Space around each button */
+            border: 1px solid #999999;
+        }
+
+        /* 
+         The main form element gets a margin to separate it from the 
+         "OR" text above and the "Terms of Service" text below.
+        */
+        form {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px;      /* Adds space inside the form area */
+            border: 1px solid #eeeeee; /* A lighter border to group the form fields */
+        }
+        
+        /* 
+         All text input fields are styled here.
+         - Padding makes the input fields taller and gives text inside some space.
+         - Margin creates space between the input fields.
+         - A border is necessary to make the input fields visible and consistent.
+        */
+        input[type="email"],
+        input[type="password"],
+        input[type="text"] {
+            padding: 10px;      /* Internal padding */
+            margin-bottom: 15px;/* Space below each input field */
+            border: 1px solid #cccccc;
+        }
+
+        /* 
+         Adds a margin above the final "Terms of Service" paragraph to push it 
+         down from the "Create account" button.
+        */
+        p {
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Create your account</h1>
+        <p>
+            Already have an account? <a href="http://127.0.0.1:5500/week3/w3schoolsregist.html" target="_blanks">Sign in</a>
+        </p>
+
+        <div>
+            <button>Google</button>
+            <button>Facebook</button>
+            <button>Github</button>
+            <button>Feide</button>
+        </div>
+
+        <p>OR</p>
+
+        <form>
+            <label for="email">email</label><br>
+            <input type="email" id="email"><br><br>
+            
+            <label for="password">password</label><br>
+            <input type="password" id="password"><br><br>
+            
+            <label for="first-name">first name</label><br>
+            <input type="text" id="first-name"><br><br>
+            
+            <label for="last-name">last name</label><br>
+            <input type="text" id="last-name"><br><br>
+            
+            <button type="submit">Create account</button>
+        </form>
+
+        <p>
+            By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </p>
+        
+        <input type="checkbox" id="newsletter" name="newsletter" checked>
+        <label for="newsletter">Email me with news and updates</label>
+
+    </div>
+
+</body>
+</html>

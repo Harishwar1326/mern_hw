@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Sign Up</title>
+    <style>
+        /* 
+         Adds padding around the main body to prevent content from 
+         touching the browser edges.
+        */
+        body {
+            padding: 20px;
+        }
+
+        /* 
+         The main container for the form.
+         - A border creates the main "card" effect.
+         - Padding adds space between the border and the form content inside.
+         - A margin provides space between this container and other elements (like the 'facebook' title).
+        */
+        .form-container {
+            border: 1px solid #ccc;
+            padding: 25px;
+            margin-top: 20px;
+        }
+        
+        /* 
+         Adds a bottom margin to all direct children of the form to create
+         consistent vertical spacing between form elements.
+        */
+        .form-container form > * {
+            margin-bottom: 15px;
+        }
+
+        /* 
+         Styles all text inputs and selects.
+         - Padding makes the fields taller and gives text inside some room.
+         - A border is necessary to visually define the fields.
+        */
+        input[type="text"],
+        input[type="password"],
+        select {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        
+        /* 
+         The containers for the gender radio buttons.
+         - A border creates the box around each option (e.g., "Female").
+         - Padding gives the text and radio button inside space.
+        */
+        .gender-option {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 5px; /* Adds a little space between the gender options */
+        }
+        
+        /* Adds margin to paragraphs for spacing out the legal text */
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* 
+         The main "Sign Up" button.
+         - Generous padding makes it large and easy to click.
+         - A border defines its edges.
+         - Margin provides space around it.
+        */
+        .signup-button {
+            padding: 14px 20px;
+            border: 1px solid #333;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>facebook</h1>
+
+    <div class="form-container">
+        <h2>Create a new account</h2>
+        <p>It's quick and easy.</p>
+
+        <hr>
+
+        <form>
+            <div>
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Surname">
+            </div>
+
+            <div>
+                <input type="text" placeholder="Mobile number or email address">
+            </div>
+
+            <div>
+                <input type="password" placeholder="New password">
+            </div>
+
+            <div>
+                <p>Date of birth</p>
+                <select>
+                    <option>6</option>
+                </select>
+                <select>
+                    <option>Aug</option>
+                </select>
+                <select>
+                    <option>2025</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Gender</p>
+                <div class="gender-option">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender">
+                </div>
+                <div class="gender-option">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender">
+                </div>
+                <div class="gender-option">
+                    <label for="custom">Custom</label>
+                    <input type="radio" id="custom" name="gender">
+                </div>
+            </div>
+
+            <p>
+                People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more.</a>
+            </p>
+
+            <p>
+                By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+            </p>
+
+            <button class="signup-button">Sign Up</button>
+        </form>
+
+        <hr>
+        
+        <a href="http://127.0.0.1:3000/week3/facebook.html">Already have an account?</a>
+
+    </div>
+
+</body>
+</html>

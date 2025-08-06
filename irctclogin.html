@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IRCTC Login</title>
+    <style>
+        /* 
+         Adds some padding around the entire page to ensure the login
+         form doesn't sit right at the browser edge.
+        */
+        body {
+            padding: 20px;
+        }
+
+        /* 
+         This is the main container for the login popup.
+         - A border creates the main box around all the content.
+         - Padding creates space between this border and the form elements inside.
+        */
+        .login-modal {
+            border: 1px solid #333; /* A dark border to define the modal */
+            padding: 30px;
+        }
+
+        /* 
+         Styles the main "LOGIN" heading.
+         - A border-bottom creates the line seen under the text.
+         - Padding-bottom adds space between the text and the line.
+         - Margin-bottom creates a larger gap below the line, before the form begins.
+        */
+        h2 {
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #666;
+        }
+
+        /* 
+         Adds margin below each form element for consistent vertical spacing.
+        */
+        form > * {
+            margin-bottom: 15px;
+        }
+
+        /* 
+         Styles the text and password input fields.
+         - Padding makes the fields taller and gives text inside some room.
+         - A border is necessary to define the shape of the input fields.
+        */
+        input[type="text"],
+        input[type="password"] {
+            padding: 12px;
+            border: 1px solid #999;
+        }
+
+        /* 
+         This is the box for the captcha text.
+         - Padding gives the text inside plenty of space.
+         - A border defines the box.
+        */
+        .captcha-box {
+            padding: 15px;
+            border: 1px solid #555;
+        }
+
+        /* 
+         Styles all buttons for a consistent look.
+         - Padding makes the buttons larger and easier to click.
+         - A border defines their edges.
+        */
+        button {
+            padding: 14px 20px;
+            border: 1px solid #333;
+        }
+        
+        /* Adds a margin to the container for the bottom buttons */
+        .footer-buttons {
+             margin-top: 20px;
+             padding-top: 20px;
+             border-top: 1px solid #ccc; /* A separator line */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-modal">
+        <h2>LOGIN</h2>
+        <form>
+            <input type="text" placeholder="User Name">
+            <input type="password" placeholder="Password">
+            <br>
+            <a href="#">FORGOT ACCOUNT DETAILS?</a><br><br>
+            
+            <div class="captcha-box">
+                
+                QNffU7
+            </div>
+            
+            <input type="text" placeholder="Enter Captcha">
+            
+            <div>
+                <input type="checkbox" id="otp-login">
+                <label for="otp-login">Login & Booking With OTP</label>
+            </div>
+            
+            <button class="sign-in-button">SIGN IN</button>
+
+            <div class="footer-buttons">
+                
+                <a href="http://127.0.0.1:3000/week3/itctc.html" class="register-button" target="_blank">REGISTER</a>
+               <br><br> <button class="agent-login-button">AGENT LOGIN</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

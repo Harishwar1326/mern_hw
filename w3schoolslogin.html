@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <style>
+        /* 
+         Adds padding around the entire page to prevent content
+         from touching the browser edges.
+        */
+        body {
+            padding: 10px;
+        }
+
+        /* 
+         Adds a border around the header and padding inside it to give 
+         the content (logo, search, nav) breathing room. A margin at the
+         bottom creates a clear separation from the main content.
+        */
+        header {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* 
+         Adds padding to the navigation links to make them larger and easier 
+         to click. A margin is used to create space between each link.
+        */
+        nav a {
+            padding: 10px;
+            margin-right: 10px; /* Adds space to the right of each nav link */
+            border: 1px solid #eee;
+        }
+
+        /* 
+         Gives the main content area padding and a border to visually
+         group the login form.
+        */
+        main {
+            padding: 30px;
+            border: 1px solid #ccc;
+        }
+
+        /* 
+         Gives the form itself a margin to separate it from the heading
+         and padding to create space around the input fields.
+        */
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #eee; /* A lighter border for the form area */
+        }
+        
+        /* 
+         Styles all text and password inputs.
+         - Padding makes the fields taller and gives typed text space.
+         - Margin creates vertical space between the input fields.
+        */
+        input[type="email"],
+        input[type="password"] {
+            padding: 12px;
+            margin-bottom: 15px; /* Space below each input */
+            border: 1px solid #aaa;
+        }
+
+        /* 
+         The submit button is given padding for a larger click area and a margin
+         to create space between it and the input fields above it.
+        */
+        button[type="submit"] {
+            padding: 15px 30px; /* Generous padding for a primary button */
+            margin-top: 10px;
+        }
+
+        /* 
+         The footer is separated from the main content with a top margin
+         and given internal padding and a border.
+        */
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* 
+         Adds spacing around the social media links in the footer.
+        */
+        footer a {
+            padding: 5px;
+            margin: 0 5px; /* Vertical margin 0, horizontal margin 5px */
+            border: 1px solid #ddd;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="logo.png" alt="W3Schools Logo">
+        <select>
+          <option>All categories</option>
+        </select>
+        <input type="text" placeholder="What are you looking for?">
+        <button>🔍</button>
+        <button>🛒</button>
+      </div>
+      <nav><br><br>
+        <a href="#">Full Access</a>
+        <a href="#">Career Paths</a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Certificate Courses</a><br><br><br>
+        <a href="#">Certificate Exams</a>
+        <a href="#">For Teachers</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Login</h1>
+      <form>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <button type="submit">Sign in</button>
+        <p>
+          New Customer? <a href="http://127.0.0.1:5500/week3/w3signup.html" target="_blank">Create account</a><br>
+          <a href="#">Forgot your password?</a>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>Follow us</p>
+      <div>
+        <a href="#">📧</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🔗</a>
+        <a href="#">🎵</a>
+        <a href="#">▶️</a>
+      </div>
+    </footer>
+  </body>
+</html>
